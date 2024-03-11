@@ -1,4 +1,4 @@
-# Better Mixture 竞赛开发套件
+# Better Mixture 竞赛参考方案
 
 ## 1. 安装依赖并下载数据
 
