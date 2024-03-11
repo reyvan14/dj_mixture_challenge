@@ -36,7 +36,7 @@ log() {
 # =============================================================================
 log "Starting Mixture Process..."
 
-# mixture_cmd="python ${MIXTURE_SCRIPT}"
+mixture_cmd="python ${MIXTURE_SCRIPT}"
 
 log "${mixture_cmd}"
 eval "${mixture_cmd}"
