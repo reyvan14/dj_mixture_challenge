@@ -59,7 +59,9 @@ def shuffle_jsonl(input_jsonl_path, final_mixture_path):
             file.write(json.dumps(item) + '\n')
 
 # 指定每个文件的样本数量
-sample_counts = {'sorted_TruthfulQA_0229.jsonl': 40000, 'sorted_math_questions_bert_large.jsonl': 23000}
+# 10M大概5万多条数据左右，经过多次试验，这个比例得到的效果较好
+# 最开始由于关于数学的问题，只筛选了23000条，所以就一直使用这个数，可以选择性提供这个比例
+sample_counts = {'sorted_TruthfulAndSumm.jsonl': 40000, 'sorted_math_questions_bert_large.jsonl': 23000}
 
 # 生成混合文件
 generate_mixture(input_dir, ratio_path, first_mixture_path, sample_counts)
