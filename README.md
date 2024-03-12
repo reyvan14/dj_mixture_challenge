@@ -24,9 +24,9 @@ Baichuan2-7B 模型没进过 PEFT（LoRA）训练的score得分大概在0.97左�
 
 因次本方案使用了两个自训练的模型，分为：
 
-1、筛选数学相关语料模型（reyvan/bert_large_maths）
+1、筛选数学相关语料模型（[reyvan/bert_large_maths](https://huggingface.co/reyvan/bert_large_maths)）
 
-2、筛选逻辑性，总结性和真实性较强的语料（reyvan/bert_large_TruthfulAndSumm）
+2、筛选逻辑性，总结性和真实性较强的语料（[reyvan/bert_large_TruthfulAndSumm](https://huggingface.co/reyvan/bert_large_TruthfulAndSumm)）
 
 具体训练方法是：利用gpt4生成一些语料作为训练数据。筛选数学相关语料的效果非常好的，接近100%的准确率，但是后者的准确大概在85-90%之间，后续可以针对这个模型进行优化。
 
